@@ -1,0 +1,81 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set font family and align the text in the center for the body */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Container to wrap the entire content */
+#container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header styling (h1) */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: rgba(0, 102, 204, 0.9); /* Blue color using rgba */
+}
+
+/* Image Gallery section */
+#image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
+    gap: 20px;
+    justify-items: center;
+    margin-top: 10%;
+}
+
+/* Styling for each image item */
+.image-item {
+    width: 100%;
+    max-width: 250px;
+}
+
+/* Title styling for each image (h3) */
+h3 {
+    font-size: 1.2rem;
+    color: rgba(255, 102, 102, 0.8); /* Light red color using rgba */
+    margin-bottom: 10px;
+    text-align: center; /* Center the h3 text */
+}
+
+/* Styling for figure tag */
+figure {
+    text-align: center; /* Center the image and caption */
+}
+
+/* Image styling */
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Rounded corners for images */
+}
+
+/* Caption styling for each image (figcaption) */
+figcaption {
+    font-style: italic;
+    font-size: 0.75em;
+    color: rgba(0, 102, 204, 0.7); /* Blue color using rgba for caption */
+    margin-top: 8px;
+}
+
+/* Link styling to return to portal */
+a {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+}
+
+a:hover {
+    color: #0073e6;
+}
