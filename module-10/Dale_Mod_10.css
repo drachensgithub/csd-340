@@ -1,0 +1,70 @@
+/* Overall body styling */
+body {
+    font-family: 'Trebuchet MS', Arial, sans-serif; /* A clean and professional font with a fun touch */
+    text-align: center;
+    background: linear-gradient(135deg, #f8f4e3, #5d3a9c); /* Beige to deep purple gradient */
+    margin: 0;
+    padding: 20px;
+    color: #3b2751; /* Deep purple text color */
+}
+
+/* Title Styling */
+h1 {
+    color: #5d3a9c; /* Deep purple for the main title */
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(93, 58, 156, 0.3); /* Subtle shadow for depth */
+}
+
+/* Subtitle and text */
+p, div {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #4e3b5c; /* A softer shade of purple */
+}
+
+/* Styling for the image grid container */
+.image-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Individual image styling in the grid */
+.image-grid img {
+    width: 150px;
+    height: 100px;
+    cursor: pointer;
+    border: 3px solid #5d3a9c; /* Deep purple border */
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover effect for images */
+.image-grid img:hover {
+    transform: scale(1.15); /* Makes the hover effect more prominent */
+    border-color: #c7b299; /* Beige for a subtle hover effect */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the main image */
+#mainImage {
+    display: block;
+    margin: 20px auto;
+    width: 300px;
+    height: 200px;
+    border: 5px solid #5d3a9c; /* Deep purple border */
+    border-radius: 15px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Makes the main image stand out */
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Main image hover effect */
+#mainImage:hover {
+    border-color: #c7b299; /* Changes border to beige on hover */
+    box-shadow: 0 10px 14px rgba(0, 0, 0, 0.25);
+}
+
+
+

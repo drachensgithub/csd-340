@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+
+<html lang = 'en'>
+  <head>
+    <title>
+      CSD 340 Web Development with HTML and CSS
+    </title>
+    <script>
+      function displayImage(imageFile){
+        var largerImage = document.getElementById("mainImage");
+        var newNode = document.createElement("img");
+        newNode.id = "mainImage";
+        newNode.src = imageFile;
+        newNode.alt = "Large Image";
+        newNode.className = "mainImage";
+        newNode.style.width = "300px";
+        newNode.style.height = "200px";
+        largerImage.parentNode.replaceChild(newNode, largerImage);
+        
+      }
+    </script>
+
+    <link rel='stylesheet' type='text/css' href='Dale_Mod_10.css' />
+
+  </head>
+
+  <body>
+  <h1>Assignment 10.3: JavaScript - Part 2</h1>
+    <br/>
+    <div>
+      <a href=#
+         onmouseover="cave.src='cave_01.jpg';"
+         onmouseout= "cave.src='cave_02.jpg';"
+      >
+        <img border = '0' id = "cave" src = "cave_02.jpg">
+      </a>
+    </div>
+    <br/>
+    <div
+         onmouseover="this.style.color='red';"
+         onmouseout= "this.style.color='black';">
+
+      Run your mouse over the image to change.
+      <br/>
+
+    </div>
+    <div>
+      <a href=#
+         onmouseover="moon.src='moon_01.jpg';"
+         onmouseout= "moon.src='moon_02.jpg';"
+      >
+        <img border = '0' id = "moon" src = "moon_02.jpg">
+      </a>
+    </div>
+    <br/>
+    <div
+         onmouseover="this.style.color='red';"
+         onmouseout= "this.style.color='black';">
+
+      Run your mouse over the image to change.
+      <br/>
+      
+
+    </div>
+
+  </body>
+
+</html>
+
