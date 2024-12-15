@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <link rel="stylesheet" href="Dale_Mod_11.css">
+</head>
+<body>
+    <h1>Assignment 11.2: JavaScript - Part 3</h1>
+	<p> Add what you need to do today and when you need to do it.</p>
+	<p> At the end of the day delete your entries</p>
+	<p> Repeat </p>
+    
+    <!-- Textbox for user input -->
+    <input type="text" id="inputText" placeholder="Enter text here">
+    
+    <!-- Buttons for actions -->
+    <div class="button-group">
+        <button onclick="addToArray()">Add</button>
+        <button onclick="deleteLastEntry()">Delete Last Entry</button>
+        <button onclick="displayArray()">Display</button>
+    </div>
+
+    <div id="displayArea"></div>
+
+    <script>
+        // Array to store the inputs
+        let myArray = [];
+
+        // Function to add an element to the array
+        function addToArray() {
+            const inputText = document.getElementById('inputText').value;
+            if (inputText !== "") {
+                myArray.push(inputText); // Add to array
+                alert('Added: ' + inputText); // Show alert with the added value
+                document.getElementById('inputText').value = ""; // Clear input
+            } else {
+                alert("Please enter some text to add.");
+            }
+        }
+
+        // Function to delete the last entry in the array
+        function deleteLastEntry() {
+            if (myArray.length > 0) {
+                const deletedItem = myArray.pop(); // Remove last item from the array
+                alert('Deleted: ' + deletedItem); // Show alert with the deleted value
+            } else {
+                alert("No entries to delete.");
+            }
+        }
+
+        // Function to display the contents of the array
+        function displayArray() {
+            if (myArray.length > 0) {
+                let displayText = "<ul>";
+                for (let i = 0; i < myArray.length; i++) {
+                    displayText += "<li>" + (i + 1) + ". " + myArray[i] + "</li>"; // Display array items with numbering
+                }
+                displayText += "</ul>";
+                document.getElementById('displayArea').innerHTML = displayText;
+            } else {
+                document.getElementById('displayArea').innerHTML = "No items in the array to display.";
+            }
+        }
+    </script>
+</body>
+</html>

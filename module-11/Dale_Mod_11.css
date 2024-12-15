@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f0f8ff; /* Light blue background for better contrast */
+    text-align: center; /* Center all content */
+}
+p {
+	font-family: Arial, sans-serif;
+	margin: 20px;
+	color: red;
+	text-align: center;
+}
+
+h1 {
+    font-size: 32px; /* Increase font size */
+    color: #ff5733; /* Vibrant orange-red color */
+    text-shadow: 2px 2px 4px #000000; /* Add a shadow effect to make it pop */
+}
+
+input[type="text"] {
+    padding: 12px;
+    font-size: 18px;
+    width: 320px;
+    margin-bottom: 20px;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    border-color: #ff5733;
+    box-shadow: 0 0 8px #ff5733;
+}
+
+.button-group {
+    margin-top: 10px;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #28a745; /* Vibrant green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #218838; /* Darker green for hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+#displayArea {
+    margin-top: 30px;
+    font-size: 18px;
+    color: #333; /* Neutral color for readability */
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 5px;
+    color: #007BFF; /* Match the button color */
+    font-weight: bold;
+}
