@@ -1,0 +1,75 @@
+# Update the CSS file to make red the main color for text and elements
+
+css_main_red = """
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffe5e5; /* Light red background */
+    color: #b30000; /* Dark red text color */
+}
+
+#container {
+    width: 80%;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 2px solid red;
+    border-radius: 8px;
+}
+
+h1, h3 {
+    color: #b30000; /* Dark red for headings */
+    border: 2px solid red;
+}
+
+#book-list {
+    margin: 15px 0;
+    padding: 10px;
+    background: #ffcccc; /* Light red background */
+    border: 2px solid red;
+    border-radius: 4px;
+    line-height: 1.8;
+    color: #b30000; /* Dark red text color */
+}
+
+button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #b30000; /* Dark red */
+    color: white;
+    border: 2px solid red;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #990000; /* Slightly darker red */
+}
+
+#bottom-div {
+    margin-top: 20px;
+    text-align: center;
+    border: 2px solid red;
+}
+
+#bottom-div a {
+    color: #b30000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#bottom-div a:hover {
+    text-decoration: underline;
+}
+"""
+
+# Save the updated CSS file with the main color as red
+css_main_red_filepath = '/mnt/data/Dale_Mod12_2_main_red.css'
+with open(css_main_red_filepath, 'w') as css_file:
+    css_file.write(css_main_red)
+
+css_main_red_filepath
+
+

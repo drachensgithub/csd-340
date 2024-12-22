@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <link rel="stylesheet" href="Dale_Mod12_2.css">
+    <script>
+        function displayBooksAscending() {
+            const books = [
+                "1. The Subtle Art of Not Giving a F**k",
+                "2. 1984",
+                "3. Salem's Lot",
+                "4. Chainsaw Man",
+                "5. Romeo and Juliet",
+                "6. Solo Leveling",
+                "7. Haikyuu!!",
+                "8. Once Upon a Time in Hollywood",
+                "9. The Haunting of Hill House",
+                "10. The Giver"
+            ];
+            document.getElementById("book-list").innerHTML = books.join("<br>");
+        }
+
+        function displayBooksDescending() {
+            const books = [
+                "1. The Subtle Art of Not Giving a F**k",
+                "2. 1984",
+                "3. Salem's Lot",
+                "4. Chainsaw Man",
+                "5. Romeo and Juliet",
+                "6. Solo Leveling",
+                "7. Haikyuu!!",
+                "8. Once Upon a Time in Hollywood",
+                "9. The Haunting of Hill House",
+                "10. The Giver"
+            ];
+            document.getElementById("book-list").innerHTML = books.reverse().join("<br>");
+        }
+    </script>
+</head>
+<body>
+    <div id="container">
+        <h1>Assignment 12.2: JavaScript - Part 4</h1>
+
+        <div style="margin-bottom: 20px;">
+            <h3>Top 10 Favorite Books</h3>
+            <div id="book-list">
+                <!-- Book list will be displayed here -->
+            </div>
+        </div>
+
+        <div style="margin-bottom: 20px;">
+            <button onclick="displayBooksAscending()">Top to Bottom</button>
+            <button onclick="displayBooksDescending()">Bottom to Top</button>
+        </div>
+
+        <div style="display: flex; justify-content: space-between;">
+            <div style="width: 45%;">
+                <h3>5 Things I’ve Learned Since the Course Started</h3>
+                <ul>
+                    <li>How to Use GitHub Pages</li>
+                    <li>How to Style using CSS</li>
+                    <li>The Basics of HTML Coding</li>
+                    <li>The Difference Between Certain Tags</li>
+                    <li>How to Add Comments to HTML</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="bottom-div" style="margin-top: 20px;">
+            <a href="index.html">Return to Landing Page</a>
+        </div>
+    </div>
+</body>
+</html>
+
